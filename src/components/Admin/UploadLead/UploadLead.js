@@ -16,7 +16,7 @@ const UploadLead = () => {
   };
 
   const handleUploadLead = () => {
-    fetch("http://192.168.10.14:7000/uploadLead", {
+    fetch("http://192.168.200.11:7000/uploadLead", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(lead),

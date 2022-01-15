@@ -20,7 +20,7 @@ const AdminLogin = () => {
   console.log(email);
 
   useEffect(() => {
-    fetch("http://192.168.10.14:7000/admin?email=" + email)
+    fetch("http://192.168.200.11:7000/admin?email=" + email)
       .then((res) => res.json())
       .then((data) => setMatchedAdmin(data))
       .catch((err) => console.log(err));

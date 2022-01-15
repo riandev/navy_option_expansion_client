@@ -7,7 +7,7 @@ const AdminSignUp = () => {
   const [signUpStatus, setSignUpStatus] = useState(false);
   const onSubmit = (data) => {
     console.log(data);
-    fetch("http://192.168.10.14:7000/adminSignUp", {
+    fetch("http://192.168.200.11:7000/adminSignUp", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

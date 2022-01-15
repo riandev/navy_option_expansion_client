@@ -20,7 +20,7 @@ const Login = () => {
   const email = loginInfo.email;
 
   useEffect(() => {
-    fetch("http://192.168.10.14:7000/agent?email=" + email)
+    fetch("http://192.168.200.11:7000/agent?email=" + email)
       .then((res) => res.json())
       .then((data) => setMatchedAgent(data))
       .catch((err) => console.log(err));
